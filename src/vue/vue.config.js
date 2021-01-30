@@ -19,18 +19,17 @@ module.exports = {
             .set("components", resolve("src/components"));
         config.module
             .rule("svg")
-            .exclude.add(resolve("src/svg"))
+            .exclude.add(resolve("node_modules/circle-flags/flags"))
             .end();
         config.module
             .rule("icons")
             .test(/\.svg$/)
-            // .include.add(resolve("node_modules/circle-flags/flags"))
-            .include.add(resolve("src/svg"))
+            .include.add(resolve("node_modules/circle-flags/flags"))
             .end()
             .use("svg-sprite-loader")
             .loader("svg-sprite-loader")
             .options({
-                symbolId: "icon-[name]"
+                symbolId: "circle_[name]"
             });
     },
     configureWebpack: {

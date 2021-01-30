@@ -1,7 +1,7 @@
 <template>
     <div>
         <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-us"></use>
+            <use :xlink:href="flagId"></use>
         </svg>
     </div>
 </template>
@@ -17,6 +17,10 @@ export default class CountryFlag extends Vue {
     @Prop() public country!: CountryCode;
     @Prop() public type!: CountryFlagType;
     @Prop() public size!: CountryFlagSize;
+
+    public get flagId() {
+        return `#${this.type}_${this.country}`;
+    }
 }
 </script>
 

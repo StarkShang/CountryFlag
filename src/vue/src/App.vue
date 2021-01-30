@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <country-flag country="#icon-us" type="circle"></country-flag>
-  </div>
+    <div id="app">
+        <country-flag country="us" type="circle"></country-flag>
+    </div>
 </template>
 
 <script lang="ts">
@@ -9,20 +9,20 @@ import { Component, Vue } from "vue-property-decorator";
 import CountryFlag from "./components/CountryFlag.vue";
 
 @Component({
-  name: "App",
-  components: {
-    CountryFlag,
-  },
+    name: "App",
+    components: {
+        CountryFlag,
+    },
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
 }
 </style>
