@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <country-flag country="zh" type="circle"></country-flag>
+    <country-flag country="#icon-us" type="circle"></country-flag>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import CountryFlag from "./components/CountryFlag.vue";
 
 @Component({

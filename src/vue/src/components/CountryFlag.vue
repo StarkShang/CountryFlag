@@ -1,5 +1,9 @@
 <template>
-    <div></div>
+    <div>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-us"></use>
+        </svg>
+    </div>
 </template>
 
 <script lang="ts">
