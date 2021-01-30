@@ -6,13 +6,9 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CountryFlag from "./components/CountryFlag.vue";
 
 @Component({
     name: "App",
-    components: {
-        CountryFlag,
-    },
 })
 export default class App extends Vue {}
 </script>

@@ -1,12 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-// import "./assets/svg/circle.svg";
-// import "./svg/us.svg";
-// import "circle-flags/flags/us.svg";
-const req = require.context("circle-flags/flags", true, /\.svg$/);
-req.keys().map(req);
+import CountryFlag from "./lib/plugins";
 
 Vue.config.productionTip = false;
+
+Vue.use(CountryFlag);
 
 new Vue({
     render: h => h(App)

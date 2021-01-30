@@ -1,0 +1,14 @@
+node_modules
+public
+src
+.browserlistrc
+.eslintrc.js
+.gitignore
+.npmignore
+.npmrc
+bable.config.js
+gulpfile.js
+package-lock.json
+README.md
+tsconfig.json
+vue.config.js
