@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import CountryFlag from "./lib/plugins";
+import CountryFlag from "../lib";
 
 Vue.config.productionTip = false;
 
