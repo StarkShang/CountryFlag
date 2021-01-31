@@ -1,22 +1,21 @@
 <template>
-    <div>
-        <svg class="icon" aria-hidden="true">
-            <use :xlink:href="flagId"></use>
-        </svg>
-    </div>
+    <svg aria-hidden="true" :width="width" :height="height">
+        <use :xlink:href="flagId"></use>
+    </svg>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import { CountryCode, CountryFlagSize, CountryFlagType } from "../models";
+import { CountryCode, CountryFlagType } from "../models";
 
 @Component({
     name: "CountryFlag"
 })
 export default class CountryFlag extends Vue {
-    @Prop() public country!: CountryCode;
-    @Prop() public type!: CountryFlagType;
-    @Prop() public size!: CountryFlagSize;
+    @Prop({ default: "cn", required: false }) public country!: CountryCode;
+    @Prop({ default: "circle", required: false }) public type!: CountryFlagType;
+    @Prop({ required: false }) public width?: number;
+    @Prop({ required: false }) public height?: number;
 
     public get flagId() {
         return `#${this.type}_${this.country}`;

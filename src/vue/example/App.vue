@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <country-flag country="us" type="circle"></country-flag>
+        <country-flag height=12></country-flag>
     </div>
 </template>
 
