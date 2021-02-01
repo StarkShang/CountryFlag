@@ -8,3 +8,4 @@
 
 1. [country-regions/country-region-data](https://github.com/country-regions/country-region-data/edit/master/data.json)
 2. [TonnyL/Telecode](https://github.com/TonnyL/Telecode/blob/master/country_region.json)
+3. [umpirsky/country-list](https://github.com/umpirsky/country-list)

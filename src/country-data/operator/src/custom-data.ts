@@ -1,9 +1,10 @@
 import { exportJson, extract, loadJson, modifyKey } from "./utils";
 
-const countries = loadJson("../../repository/country.json") as [Record<string, any>];
+const countries = loadJson("../repository/country.json") as [Record<string, any>];
 const keyMap: Record<string, string> = {
     "zh-Hans-CN": "name",
-    "alpha2-code": "code"
+    "en-US": "en",
+    "alpha2-code": "code",
 }
 const result: any[] = [];
 countries.forEach(country => {
