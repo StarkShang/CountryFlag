@@ -5939,7 +5939,8 @@
             }
         ],
         "en-US": "Hong Kong",
-        "alpha2-code": "HK"
+        "alpha2-code": "HK",
+        "zh-Hans-CN": "香港"
     },
     {
         "regions": [
@@ -7635,8 +7636,9 @@
                 "shortCode": "10"
             }
         ],
-        "en-US": "Korea, Democratic People's Republic of",
-        "alpha2-code": "KP"
+        "en-US": "Korea(Democratic People's Republic of)",
+        "alpha2-code": "KP",
+        "zh-Hans-CN": "朝鲜"
     },
     {
         "regions": [
@@ -7709,8 +7711,9 @@
                 "shortCode": "31"
             }
         ],
-        "en-US": "Korea, Republic of",
-        "alpha2-code": "KR"
+        "en-US": "Korea(Republic of)",
+        "alpha2-code": "KR",
+        "zh-Hans-CN": "韩国"
     },
     {
         "regions": [
@@ -7744,7 +7747,8 @@
             }
         ],
         "en-US": "Kosovo",
-        "alpha2-code": "XK"
+        "alpha2-code": "XK",
+        "zh-Hans-CN": "科索沃"
     },
     {
         "regions": [

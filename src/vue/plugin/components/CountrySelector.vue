@@ -4,10 +4,11 @@
             :options="countries"
             :placeholder="placeholder"
             :internal-search="false"
-            :limit="3"
+            :limit="limit"
             :limit-text="limitText"
-            :options-limit="5"
-            @search-change="searchCountry">
+            :options-limit="optionsLimit"
+            @search-change="searchCountry"
+            @select="selectCountry">
             <template v-slot:option="{ option }">
                 <div class="coutry-option">
                     <country-flag class="country-flag" :country="option.code | lower"></country-flag>
@@ -22,6 +23,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Multiselect from "vue-multiselect";
 import countriesData from "../data/countries.json";
+import { Country } from "../models";
 
 @Component({
     name: "CountrySelector",
@@ -34,21 +36,26 @@ import countriesData from "../data/countries.json";
 })
 export default class CountrySelector extends Vue {
     @Prop({ default: "选择国家" }) public placeholder!: string;
-    public countries: any[] = [];
+    @Prop() public limit?: number;
+    @Prop({ default: () => (count: number) => `...以及其余${count}个国家` }) public limitText?: string;
+    @Prop() public optionsLimit?: number;
+
+    public countries: Country[] = countriesData as Country[];
     public selected: any = "";
-    public limitText(count: number) {
-        return `...以及其余${count}个国家`
-    }
 
     public searchCountry(keyword: string) {
         if (keyword) {
-            this.countries = countriesData.filter(country =>
+            this.countries = (countriesData as Country[]).filter(country =>
                 (country.name as string)?.includes(keyword) ||
                 (country.en as string)?.toLowerCase().includes(keyword.toLowerCase())
             );
         } else {
-            this.countries = countriesData;
+            this.countries = countriesData as Country[];
         }
+    }
+
+    public selectCountry(country: Country) {
+        this.$emit("select", country);
     }
 }
 </script>

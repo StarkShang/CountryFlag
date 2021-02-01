@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <country-flag height=12></country-flag>
-        <country-selector style="width:100%"></country-selector>
+        <country-selector style="width:100%" @select="selectCountry"></country-selector>
     </div>
 </template>
 
@@ -11,7 +11,11 @@ import { Component, Vue } from "vue-property-decorator";
 @Component({
     name: "App",
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+    public selectCountry(country: any) {
+        console.log(country);
+    }
+}
 </script>
 
 <style lang="scss">

@@ -483,7 +483,8 @@
     },
     {
         "en": "Hong Kong",
-        "code": "HK"
+        "code": "HK",
+        "name": "香港"
     },
     {
         "en": "Hungary",
@@ -568,16 +569,19 @@
         "name": "基里巴斯"
     },
     {
-        "en": "Korea, Democratic People's Republic of",
-        "code": "KP"
+        "en": "Korea(Democratic People's Republic of)",
+        "code": "KP",
+        "name": "朝鲜"
     },
     {
-        "en": "Korea, Republic of",
-        "code": "KR"
+        "en": "Korea(Republic of)",
+        "code": "KR",
+        "name": "韩国"
     },
     {
         "en": "Kosovo",
-        "code": "XK"
+        "code": "XK",
+        "name": "科索沃"
     },
     {
         "en": "Kuwait",
