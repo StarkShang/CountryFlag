@@ -6,9 +6,12 @@
     "private": true,
     "main": "dist/bundle.common.js",
     "types": "dist/types/plugin/index.d.ts",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build --target lib --name bundle plugin/index.ts",
+        "build": "vue-cli-service build --target lib --name bundle plugin/index.ts && rm ./dist/demo.html ",
         "lint": "vue-cli-service lint"
     },
     "dependencies": {

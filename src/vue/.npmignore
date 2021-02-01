@@ -1,11 +1,13 @@
+example
 node_modules
+plugin
 public
-.browserlistrc
+.browserslistrc
 .eslintrc.js
 .gitignore
 .npmignore
 .npmrc
-bable.config.js
+babel.config.js
 gulpfile.js
 package-lock.json
 README.md
