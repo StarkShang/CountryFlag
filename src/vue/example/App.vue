@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <country-flag height=12></country-flag>
+        <country-selector style="width:100%"></country-selector>
     </div>
 </template>
 

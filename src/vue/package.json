@@ -17,7 +17,9 @@
     "dependencies": {
         "circle-flags": "git+https://github.com/HatScripts/circle-flags.git",
         "vue-class-component": "^7.2.3",
-        "vue-property-decorator": "^9.1.2"
+        "vue-multiselect": "^2.1.6",
+        "vue-property-decorator": "^9.1.2",
+        "vue-select": "^3.11.2"
     },
     "peerDependencies": {
         "core-js": "^3.6.5",
@@ -25,6 +27,8 @@
     },
     "devDependencies": {
         "@types/gulp": "^4.0.8",
+        "@types/node": "^14.14.22",
+        "@types/vue-select": "^2.5.1",
         "@typescript-eslint/eslint-plugin": "^2.33.0",
         "@typescript-eslint/parser": "^2.33.0",
         "@vue/cli-plugin-babel": "~4.5.0",
@@ -46,6 +50,7 @@
         "svg-sprite-loader": "^5.2.1",
         "ts-node": "^9.1.1",
         "typescript": "~3.9.3",
+        "vue": "^2.6.12",
         "vue-template-compiler": "^2.6.11",
         "webpack-cli": "^4.4.0"
     }
