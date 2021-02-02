@@ -1,9 +1,11 @@
 {
-    "name": "@attonex/country-flag",
+    "name": "@attonex/vue-country",
+    "description": "国家地区相关工具",
     "version": "0.1.0",
     "author": "Stark Shang<stark.shang@outlook.com>",
+    "repository": "https://github.com/StarkShang/CountryRegion/tree/main/src/vue",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "main": "dist/bundle.common.js",
     "types": "dist/types/plugin/index.d.ts",
     "files": [
@@ -12,7 +14,8 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build --target lib --name bundle plugin/index.ts && rm ./dist/demo.html ",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "push": "npm run build && npm publish --access=public"
     },
     "dependencies": {
         "circle-flags": "git+https://github.com/HatScripts/circle-flags.git",
